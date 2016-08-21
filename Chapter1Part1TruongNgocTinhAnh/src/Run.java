@@ -12,9 +12,12 @@ public class Run {
 		BufferedReader input = new BufferedReader (new InputStreamReader (System.in));
         System.out.println("Enter a: ");
         try{
+        Task1SuperlativeEquation ta = new Task1SuperlativeEquation();
         int a = Integer.parseInt(input.readLine());
         System.out.println("Enter b: ");
         int b = Integer.parseInt(input.readLine());
+        ta.setA(a);
+        ta.setB(b);
         
         if(t.calculate() == 999999)
 			System.out.println("The equation infinitely many root");

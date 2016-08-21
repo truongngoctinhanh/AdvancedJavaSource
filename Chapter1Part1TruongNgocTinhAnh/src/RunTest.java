@@ -1,10 +1,15 @@
 import static org.junit.Assert.*;
 
-import java.nio.charset.spi.CharsetProvider;
-
 import org.junit.Test;
 
-
+/**
+ * Author: Truong Ngoc Tinh Anh
+ * Date: 18 -08 - 2016
+ * Version: 01
+ * UnitTest for calculation roots of Superlative Equation
+ * Input: number a, number b
+ * Output: roots of Superlative Equation
+ */
 public class RunTest {
 
 	Task1SuperlativeEquation equation = new Task1SuperlativeEquation();

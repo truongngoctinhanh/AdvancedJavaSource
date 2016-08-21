@@ -1,4 +1,9 @@
-
+/**
+ * Author: Truong Ngoc Tinh Anh
+ * Date: 18 - 08 -2016
+ * Version: 01
+ * Class for calculation roots of SuperlativeEquation
+ */
 public class Task1SuperlativeEquation {
 	int a;
 	int b;

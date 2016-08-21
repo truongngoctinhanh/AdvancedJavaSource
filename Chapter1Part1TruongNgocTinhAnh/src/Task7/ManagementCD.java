@@ -1,5 +1,10 @@
 package Task7;
-
+/**
+ * Author: Truong Ngoc Tinh Anh
+ * Date: 21- 08 -2016
+ * Version: 01
+ * Class for management CD
+ */
 public class ManagementCD {
 	private String id;
     private String name;
