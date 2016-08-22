@@ -10,7 +10,7 @@ public class Infantryman extends Soldier{
 		super(name, power, weapon);
 	}
 	@Override
-	public void fight(){
-		this.setPower(getPower() - 2);
+	public int fight(){
+		return this.power - 2;
 	}
 }

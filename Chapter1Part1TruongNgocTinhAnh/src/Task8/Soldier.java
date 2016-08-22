@@ -6,10 +6,10 @@ package Task8;
  * Class for declare Soldier object and fight() method
  */
 public class Soldier {
-	private String name;
-	private int power;
-	private String weapon;
-	public Soldier() {
+	protected String name;
+	protected int power;
+	protected String weapon;
+	protected Soldier() {
 		super();
 	}
 	public Soldier(String name, int power, String weapon) {
@@ -37,8 +37,8 @@ public class Soldier {
 		this.weapon = weapon;
 	}
 	
-	public void fight(){
-		this.setPower(getPower() - 1);
+	public int fight(){
+		return this.power - 1;
 	}
 	
 	
