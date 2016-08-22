@@ -5,16 +5,16 @@ package Task6;
  * Version: 01
  * Class for calculate monthly salary 
  */
-public class Salary {
-	private String name;
-	private double coefficient;
-	private int amountOfPeople;
-	private double allowance;
+public class Employee {
+	protected String name;
+	protected double coefficient;
+	protected int amountOfPeople;
+	protected double allowance;
 	final double AMOUNT0 = 1260000;
     final double AMOUNT1 = 9000000;
     final double AMOUNT2 = 3600000;
 	
-	public Salary(String name, double coefficient, int amountOfPeople,
+	public Employee(String name, double coefficient, int amountOfPeople,
 			double allowance) {
 		super();
 		this.name = name;
@@ -23,7 +23,7 @@ public class Salary {
 		this.allowance = allowance;
 	}
 	
-	public Salary() {
+	public Employee() {
 		super();
 	}
 	
@@ -96,5 +96,12 @@ public class Salary {
 		double salary = 0;
 		salary = this.calculateIncome() - this.calculatePersonalIncomeTax();
 		return salary;
+	}
+	
+	public void DisplayInfoEmployee(){
+		System.out.println("Full name of Employee: " + this.name);
+		System.out.println("Coefficient : " + this.coefficient);
+		System.out.println("Amount of dependent people: " + this.amountOfPeople);
+		System.out.println("Allowance: " + this.allowance);
 	}
 }

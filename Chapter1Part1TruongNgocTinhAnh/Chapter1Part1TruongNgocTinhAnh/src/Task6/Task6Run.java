@@ -19,7 +19,7 @@ public class Task6Run {
         System.out.println("Enter allowance: ");
         double allo  = Double.parseDouble(input.readLine()); 
         
-        Salary sal = new Salary(name, coef, depe, allo);
+        Employee sal = new Employee(name, coef, depe, allo);
                 
         System.out.println(String.format("Income is : %.0f", sal.calculateIncome()) + " vnd");
         System.out.println(String.format("Taxable income is : %.0f", sal.calculateTaxableIncome())+ " vnd");

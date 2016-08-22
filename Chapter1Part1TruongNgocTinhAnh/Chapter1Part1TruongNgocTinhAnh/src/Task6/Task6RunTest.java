@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class Task6RunTest {
-Salary sal = new Salary();
+Employee sal = new Employee();
     @Test
     public void testSalary1(){
         sal.setCoefficient(2.67);
