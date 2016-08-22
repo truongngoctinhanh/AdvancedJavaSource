@@ -30,18 +30,18 @@ public class Task8Run {
 		// TODO Auto-generated method stub
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         try {
-            System.out.println("Input information of infantryman: ");
-            System.out.print("Input name: ");
-            String nameOfIn = input.readLine();
-            System.out.print("Input power: ");
-            int powerOfIn = Integer.parseInt(input.readLine());
-            if (powerOfIn <= 0) {
-                throw new ArithmeticException("Power is not valid!");
+            System.out.println("Enter information of Infantryman: ");
+            System.out.print("Enter name: ");
+            String nameInfan = input.readLine();
+            System.out.print("Enter power: ");
+            int powerInfan = Integer.parseInt(input.readLine());
+            if (powerInfan <= 0) {
+                throw new ArithmeticException("Enter is not valid!");
             }
-            System.out.print("Input weapon:");
-            String weaponOfIn = input.readLine();
+            System.out.print("Enter weapon:");
+            String weaponInfan = input.readLine();
 
-            Infantryman in = new Infantryman(nameOfIn, powerOfIn, weaponOfIn);
+            Infantryman in = new Infantryman(nameInfan, powerInfan, weaponInfan);
             System.out.println("--->Infantryman created!");
 
             System.out.println("Input information of trooper: ");
