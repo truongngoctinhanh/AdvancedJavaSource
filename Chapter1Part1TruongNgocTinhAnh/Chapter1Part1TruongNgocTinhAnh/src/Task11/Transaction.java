@@ -1,5 +1,10 @@
 package Task11;
-
+/**
+ * Author: Truong Ngoc Tinh Anh
+ * Date: 22- 08 -2016
+ * Version: 1.0
+ * Class for declare Transaction object
+ */
 public class Transaction {
 	protected String id;
 	protected String date;
@@ -34,5 +39,11 @@ public class Transaction {
 		this.quantity = quantity;
 	}
 	
+	//Function for Display Information Transaction
+	public void DisplayInfoTransaction(){
+		System.out.println("Transaction ID: " + this.id);
+		System.out.println("Date of transaction: " + this.date);
+		System.out.println("Quantity : " + this.quantity);
+	}
 	
 }

@@ -49,6 +49,7 @@ public class Human {
 		this.phoneNumber = phoneNumber;
 	}
 	
+	//Function for show information
 	public void showInformation(){
 		System.out.println("..............................................");
 		System.out.println("Full name of Student: " + this.fullName);

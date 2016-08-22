@@ -2,7 +2,7 @@ package Task10;
 /**
  * Author: Truong Ngoc Tinh Anh
  * Date: 22- 08 -2016
- * Version: 01
+ * Version: 1.0
  * Class for declare Student object extend Human object and add calculateGPA method, showInformation method
  */
 public class Student extends Human{
@@ -39,12 +39,14 @@ public class Student extends Human{
 		this.pointOfSemester2 = pointOfSemester2;
 	}
 	
+	//Function for calculate GPA of student
 	public double calculateGPA(){
 		double result = 0;
 		result = (this.pointOfSemester1 + this.pointOfSemester2)/2;
 		return result;
 	}
 	
+	//Function for override showInformation method
 	public void showInformation(){
 		System.out.println("..............................................");
 		System.out.println("Full name of Student: " + this.fullName);

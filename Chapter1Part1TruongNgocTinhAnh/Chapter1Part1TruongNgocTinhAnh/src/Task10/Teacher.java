@@ -43,12 +43,14 @@ public class Teacher extends Human {
 		return basicSalary;
 	}
 	
+	//Funtion for calculate salary of Teacher
 	public double calculateSalary(){
 		double result = 0;
 		result = this.coefficientsOfSalary * basicSalary + allowance;
 		return result;
 	}
 	
+	//Function for override showInformation method
 	public void showInformation(){
 		System.out.println(".............................................");
 		System.out.println("Full name of teacher: " + this.fullName);

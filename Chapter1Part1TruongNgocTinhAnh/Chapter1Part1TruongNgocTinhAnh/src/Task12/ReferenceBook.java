@@ -1,5 +1,10 @@
 package Task12;
-
+/**
+ * Author: Truong Ngoc Tinh Anh
+ * Date: 22- 08 -2016
+ * Version: 01
+ * Class for declare RefernceBook object extend Book object and add calculateFee method, DisplayInfoBook method
+ */
 public class ReferenceBook extends Book {
 	private double tax;
 
@@ -24,6 +29,7 @@ public class ReferenceBook extends Book {
    			throw new ArithmeticException("Invalid value ! Please re-enter: ");
 	}
 
+	//Function for override calculateFee method
 	@Override
 	public double calculateFee() {
 		double fee = 0;
@@ -31,6 +37,7 @@ public class ReferenceBook extends Book {
 		return fee;
 	}
 	
+	//Function for override DisplayInfoBook method
 	@Override
 	public void DisplayInfoBook(){
 		System.out.println("..............................................");

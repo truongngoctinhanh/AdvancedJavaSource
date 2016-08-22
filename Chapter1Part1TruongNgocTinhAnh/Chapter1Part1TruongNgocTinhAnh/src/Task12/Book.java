@@ -1,5 +1,10 @@
 package Task12;
-
+/**
+ * Author: Truong Ngoc Tinh Anh
+ * Date: 22- 08 -2016
+ * Version: 1.0
+ * Class for declare Book object
+ */
 public class Book {
 	protected String id;
 	protected String name;
@@ -57,10 +62,12 @@ public class Book {
 		this.publishingCompany = publishingCompany;
 	}
 	
+	//Function for calculate fee of book
 	public double calculateFee(){
 		return calculateFee();
 	}
 	
+	//Function for  Display Information Book
 	public void DisplayInfoBook(){
 		System.out.println("..............................................");
 		System.out.println("Book ID: " + this.id);

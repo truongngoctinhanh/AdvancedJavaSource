@@ -1,5 +1,10 @@
 package Task12;
-
+/**
+ * Author: Truong Ngoc Tinh Anh
+ * Date: 22- 08 -2016
+ * Version: 1.0
+ * Class for declare TextBook object extend Book object and add calculateFee method, DisplayInfoBook method
+ */
 public class TextBook extends Book {
 	private int status;
 
@@ -20,7 +25,8 @@ public class TextBook extends Book {
 	public void setStatus(int status) {
 		this.status = status;
 	}
-
+	
+	//Function for override calculateFee method
 	@Override
 	public double calculateFee() {
 		double fee = 0;
@@ -31,6 +37,7 @@ public class TextBook extends Book {
 		return fee;
 	}
 	
+	//Function for override DisplayInfoBook method
 	@Override
 	public void DisplayInfoBook(){
 		System.out.println("..............................................");

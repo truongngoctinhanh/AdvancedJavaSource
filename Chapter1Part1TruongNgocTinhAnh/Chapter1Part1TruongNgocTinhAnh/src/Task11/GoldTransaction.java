@@ -1,27 +1,31 @@
 package Task11;
+/**
+ * Author: Truong Ngoc Tinh Anh
+ * Date: 22- 08 -2016
+ * Version: 1.0
+ * Class for enum gold transaction to total money of gold transaction
+ */
+public enum GoldTransaction {
+	SJC9999(3550000),
+	G24K(3514100);
+	
+	public double price;
 
-public class GoldTransaction {
-	private double exchangeRate;
-	private String kindsOfCurrency;
-	public GoldTransaction() {
-		super();
+	private GoldTransaction(double price) {
+		this.price = price;
 	}
-	public GoldTransaction(double exchangeRate, String kindsOfCurrency) {
-		super();
-		this.exchangeRate = exchangeRate;
-		this.kindsOfCurrency = kindsOfCurrency;
+
+	public double getPrice() {
+		return price;
 	}
-	public double getExchangeRate() {
-		return exchangeRate;
-	}
-	public void setExchangeRate(double exchangeRate) {
-		this.exchangeRate = exchangeRate;
-	}
-	public String getKindsOfCurrency() {
-		return kindsOfCurrency;
-	}
-	public void setKindsOfCurrency(String kindsOfCurrency) {
-		this.kindsOfCurrency = kindsOfCurrency;
+
+	public void setPrice(double price) {
+		this.price = price;
 	}
 	
+	//Function for calculate total money with quantity gold.
+	public double calMoney(double quantity){
+		return this.price * quantity;
+	}
 }
+
