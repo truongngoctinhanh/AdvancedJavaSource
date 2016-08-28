@@ -10,6 +10,11 @@ public class Trooper extends Soldier{
 		super(name, power, weapon);
 	}
 	
+	/**
+	 * Function for calculate power of fight
+	 * Input: power
+	 * Output: power
+	 */
 	@Override
 	public int fight(){
 		return this.power - 3;

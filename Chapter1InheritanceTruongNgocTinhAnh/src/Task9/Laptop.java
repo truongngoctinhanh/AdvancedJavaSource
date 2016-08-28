@@ -46,7 +46,11 @@ public class Laptop extends Computer {
 		this.sizeOfScreen = sizeOfScreen;
 	}
 	
-	//Function for override showInformation method
+	/**
+	 * Function for override showInformation method to display information of computer
+	 * Input: none
+	 * Output: information of laptop
+	 */
 	@Override
 	public void showInformation(){
 		System.out.println("Information of Laptop");

@@ -51,8 +51,11 @@ public class Employee {
 	public void setAllowance(double allowance) {
 		this.allowance = allowance;
 	}
-	
-	//Function for calculate income
+	/**
+	 * Function for calculate income
+	 * Input: Coefficient, Allowance
+	 * Output: salary
+	 */
 	public double calculateIncome(){
 		double salary = 0;
 		if(this.getCoefficient() < 0) throw new ArithmeticException("Coefficient is not valid!");
@@ -61,15 +64,22 @@ public class Employee {
         return salary;
 	}
 	
-	//Function for calculate taxable income
+	/**
+	 * Function for calculate taxable income
+	 * Input: Income, AmountOfPeople
+	 * Output: salaryTax
+	 */
 	public double calculateTaxableIncome(){
 		double salaryTax = 0;
 		if(this.getAmountOfPeople() < 0) throw new ArithmeticException("Amount of people depend is not valid!");
         salaryTax = this.calculateIncome() - AMOUNT1 - this.getAmountOfPeople() * AMOUNT2;
         return salaryTax;
 	}
-	
-	//Function for calculate personal income tax
+	/**
+	 * Function for calculate personal income tax
+	 * Input: none
+	 * Output: personal income tax
+	 */
 	public double calculatePersonalIncomeTax(){
 		double result = 0;
         double calcTaxableIncome = this.calculateTaxableIncome();
@@ -91,13 +101,22 @@ public class Employee {
         return result;
 	}
 	
-	//Function for calculate actual income
+	/**
+	 * Function for calculate actual income
+	 * Input: Income, PersonalIncomeTax
+	 * Output: salary
+	 */
 	public double calculateActualIncome(){
 		double salary = 0;
 		salary = this.calculateIncome() - this.calculatePersonalIncomeTax();
 		return salary;
 	}
 	
+	/**
+	 * Function for display information of employee
+	 * Input: none
+	 * Output: information of employee
+	 */
 	public void DisplayInfoEmployee(){
 		System.out.println("Full name of Employee: " + this.name);
 		System.out.println("Coefficient : " + this.coefficient);

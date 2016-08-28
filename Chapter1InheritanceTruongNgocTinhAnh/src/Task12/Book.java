@@ -62,12 +62,20 @@ public class Book {
 		this.publishingCompany = publishingCompany;
 	}
 	
-	//Function for calculate fee of book
+	/**
+	 * Function for calculate fee of book
+	 * Input: none
+	 * Output: none
+	 */
 	public double calculateFee(){
 		return calculateFee();
 	}
 	
-	//Function for  Display Information Book
+	/**
+	 * Function for  Display Information of Book
+	 * Input: none
+	 * Output: Information of book
+	 */
 	public void DisplayInfoBook(){
 		System.out.println("..............................................");
 		System.out.println("Book ID: " + this.id);

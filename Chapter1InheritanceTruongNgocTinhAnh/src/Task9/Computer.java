@@ -46,14 +46,21 @@ public class Computer {
 		this.numOfImport = numOfImport;
 	}
 	
-	//Function for calculate money of computers
+	/**
+	 * Function for calculate money of computer
+	 * Input: unit price, number of import
+	 * Output: Money
+	 */
 	public double calculateMoney(){
 		double money = 0;
 		money = this.unitPrice * this.numOfImport;
 		return money;
 	}
-	
-	//Function for show information of computers
+	/**
+	 * Function for display information of computer
+	 * Input: none
+	 * Output: information of computer
+	 */
 	public void showInformation(){
 		System.out.println("Information of Computer");
 		System.out.println("ID of computer: " + this.id);

@@ -35,7 +35,11 @@ public class Animals {
 		this.mainFood = mainFood;
 	}
 	
-	//Function for display information of animal
+	/**
+	 * Function for display information of animal
+	 * Input: name, main food of animal
+	 * Output: information of animal
+	 */
 	public void showInformation(){
 		System.out.println("Name: " + name);
 		System.out.println("Main food: " + mainFood);

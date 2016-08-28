@@ -26,13 +26,21 @@ public class NonstringedInstruments extends Instrument {
 		this.usage = usage;
 	}
 	
-	//Function for override abstract play() method
+	/**	
+	 * Function for override abstract play() method to display usage of stringed Instrument
+	 * Input: usage of stringed Instrument
+	 * Output: information usage of stringed Instrument
+	 */
 	@Override
 	public void play() {
 		System.out.println("Usage of " + this.name + " : " + this.usage);
 	}
 	
-	//Function for override abstract displayInfo() method
+	/**	
+	 * Function for override abstract displayInfo() method to display information of Instrument
+	 * Input: name and production unit of Instrument
+	 * Output: information of Instrument
+	 */
 	@Override
 	public void displayInfo() {
 		System.out.println("Instrument name: " + this.name);

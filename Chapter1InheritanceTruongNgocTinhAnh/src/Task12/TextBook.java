@@ -26,7 +26,11 @@ public class TextBook extends Book {
 		this.status = status;
 	}
 	
-	//Function for override calculateFee method
+	/**
+	 * Function for override calculateFee() method to calculate fee of text book
+	 * Input: quantity, unit price, status
+	 * Output: fee of book
+	 */
 	@Override
 	public double calculateFee() {
 		double fee = 0;
@@ -37,7 +41,10 @@ public class TextBook extends Book {
 		return fee;
 	}
 	
-	//Function for override DisplayInfoBook method
+	/**
+	 * Function for override DisplayInfoBook method to display information of text book
+	 * Output: information of text book
+	 */
 	@Override
 	public void DisplayInfoBook(){
 		System.out.println("..............................................");
@@ -52,8 +59,4 @@ public class TextBook extends Book {
 		else
 			System.out.println("Publishing company: new" );
 	}
-
-	
-	
-	
 }

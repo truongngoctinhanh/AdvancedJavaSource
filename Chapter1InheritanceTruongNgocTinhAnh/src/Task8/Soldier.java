@@ -36,7 +36,11 @@ public class Soldier {
 	public void setWeapon(String weapon) {
 		this.weapon = weapon;
 	}
-	
+	/**
+	 * Function for calculate power of fight
+	 * Input: power
+	 * Output: power
+	 */
 	public int fight(){
 		return this.power - 1;
 	}

@@ -24,29 +24,48 @@ public class Student extends Human{
 		return grade;
 	}
 	public void setGrade(String grade) {
-		this.grade = grade;
+		if (this.grade.length() > 0)
+			this.grade = grade;
+		else
+			System.out.println("Value is NULL");
+		
 	}
 	public double getPointOfSemester1() {
 		return pointOfSemester1;
 	}
 	public void setPointOfSemester1(double pointOfSemester1) {
-		this.pointOfSemester1 = pointOfSemester1;
+		if (this.pointOfSemester1 > 0)
+			this.pointOfSemester1 = pointOfSemester1;
+		else
+			System.out.println("Invalid value");
 	}
+		
+		
 	public double getPointOfSemester2() {
 		return pointOfSemester2;
 	}
 	public void setPointOfSemester2(double pointOfSemester2) {
-		this.pointOfSemester2 = pointOfSemester2;
+		if (this.pointOfSemester2 > 0)
+			this.pointOfSemester2 = pointOfSemester2;
+		else
+			System.out.println("Invalid value");
 	}
 	
-	//Function for calculate GPA of student
+	/**	 
+	 * Function for calculate GPA of student
+	 * Input: pointOfSemester1, pointOfSemester2
+	 * Output: GPA of student
+	 */
 	public double calculateGPA(){
 		double result = 0;
 		result = (this.pointOfSemester1 + this.pointOfSemester2)/2;
 		return result;
 	}
 	
-	//Function for override showInformation method
+	/**	 
+	 * Function for override showInformation method
+	 * Output: information of student
+	 */
 	public void showInformation(){
 		System.out.println("..............................................");
 		System.out.println("Full name of Student: " + this.fullName);

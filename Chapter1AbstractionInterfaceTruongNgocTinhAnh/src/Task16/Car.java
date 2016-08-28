@@ -60,14 +60,22 @@ public class Car extends Vehicle implements ISpeed, IConsumeFuel{
 				+ name + ", manufacturer=" + manufacturer + ", color=" + color
 				+ ", owner=" + owner;
 	}
-
-	//Function for  calculate kilometer with each hour
+	
+	/**
+	 * Function for  calculate kilometer with each hour
+	 * Input: distance, time of car
+	 * Output: consume fuel of car
+	 */
 	@Override
 	public double calConsumeFuel() {
 		return time.distance / time.time;
 	}
-
-	//Function for  calculate kilometer witch each a liter of fuel
+	
+	/**
+	 * Function for  calculate kilometer witch each a liter of fuel
+	 * Input: distance, fuel of car
+	 * Output: speed of car
+	 */
 	@Override
 	public double calSpeed() {
 		return fuel.distance / fuel.fuel;

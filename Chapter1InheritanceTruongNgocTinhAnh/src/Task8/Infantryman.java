@@ -9,6 +9,12 @@ public class Infantryman extends Soldier{
 	public Infantryman(String name, int power, String weapon){
 		super(name, power, weapon);
 	}
+	
+	/**
+	 * Function for calculate power of fight
+	 * Input: power
+	 * Output: power
+	 */
 	@Override
 	public int fight(){
 		return this.power - 2;

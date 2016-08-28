@@ -29,15 +29,21 @@ public class ProductionStaff extends Employee{
         this.amount = amount;
     }
 
-    
-    //Function for calculate salary of production employee
+    /**
+	 * Function for calculate salary of production employee
+	 * Input: amount, rate bonus
+	 * Output: salary
+	 */
     @Override
     public double calculateIncome() {
         double bonus = (this.amount - this.AMOUNT) * this.RATEBONUS;
         return super.calculateIncome() + bonus;
     }
-    
-  //Function for override DisplayInfoEmployee method
+    /**
+	 * Function for override DisplayInfoEmployee method to display information of staff
+	 * Input: none
+	 * Output: information of staff
+	 */
     @Override
     public void DisplayInfoEmployee(){
     	System.out.println("...................................................");

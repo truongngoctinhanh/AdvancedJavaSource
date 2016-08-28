@@ -23,7 +23,11 @@ public enum GoldTransaction {
 		this.price = price;
 	}
 	
-	//Function for calculate total money with quantity gold.
+	/**
+	 * Function for calculate total money with quantity gold.
+	 * Input: quantity
+	 * Output: money
+	 */
 	public double calMoney(double quantity){
 		return this.price * quantity;
 	}

@@ -35,13 +35,20 @@ public enum CurrencyTransaction {
 		this.priceSell = priceSell;
 	}
 	
-	 // Calculate total money to buy currency depend quantity
-	 
+	/**
+	 * Function for Calculate total money to buy currency depend quantity
+	 * Input: quantity
+	 * Output: money to buy quantity
+	 */ 
 	public double calculateMoneyBuy(int quantity){
 		return this.getPriceBuy() * quantity;
 	}
 	
-	// Calculate total money to sell currency depend quantity
+	/**
+	 * Function for Calculate total money to sell currency depend quantity
+	 * Input: quantity
+	 * Output: money to sell quantity
+	 */ 
 	public double calculateMoneySell(int quantity){
 		return this.getPriceSell() * quantity + (quantity * this.getPriceSell()) * 0.1;
 	}

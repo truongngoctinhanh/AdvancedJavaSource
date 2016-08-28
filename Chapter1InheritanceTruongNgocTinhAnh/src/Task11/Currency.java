@@ -52,7 +52,10 @@ public class Currency extends Transaction {
 			priceBuy = CurrencyTransaction.AUD.getPriceBuy();
 	}
 	
-	//Function for override DisplayInfoTransaction method
+	/**
+	 * Function for override DisplayInfoTransaction method
+	 * Output: information of transaction
+	 */
 	@Override
 	public void DisplayInfoTransaction(){
 		System.out.println("Transaction ID: " + this.id);
@@ -62,7 +65,11 @@ public class Currency extends Transaction {
 		System.out.println("Kinds of currency : " + this.kindsOfCurrency);
 	}
 	
-	// Calculate total money to buy currency depend kinds of currency
+	/**
+	 * Function for Calculate total money to buy currency depend kinds of currency
+	 * Input: kinds of currency
+	 * Output: money to buy currency
+	 */
 	public double calculateMoneyBuy(int kindsOfCurrency){
 		
 		double money = 0;
@@ -81,7 +88,11 @@ public class Currency extends Transaction {
 		return money;
 	}
 	
-	// Calculate total money to sell currency depend kindsOfCurrency
+	/**
+	 * Function for Calculate total money to sell currency depend kinds Of Currency
+	 * Input: kinds of currency
+	 * Output: money to sell currency
+	 */
 	public double calculateMoneySell(int kindsOfCurrency){
 		double money = 0;
 		switch(kindsOfCurrency){

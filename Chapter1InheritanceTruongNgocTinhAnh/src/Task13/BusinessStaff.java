@@ -37,19 +37,30 @@ public class BusinessStaff extends Employee {
         this.rateSalaryTrade = rateSalaryTrade;
     }
     
-    
-    //Function for calculate bonus salary
+    /**
+	 * Function for calculate bonus salary
+	 * Input: salary trade
+	 * Output: bonus
+	 */
     public double calculateBonus(){
         return this.getSalaryTrade() * this.getRateSalaryTrade();
     }
     
-    //Function for calculate salary
+    /**
+	 * Function for calculate salary
+	 * Input: income, bonus
+	 * Output: salary
+	 */
     @Override
     public double calculateIncome(){
         return super.calculateIncome() + this.calculateBonus();
     }
     
-  //Function for override DisplayInfoEmployee method
+    /**
+	 * Function for override DisplayInfoEmployee method to display information of staff
+	 * Input: none
+	 * Output: information of staff
+	 */
     @Override
     public void DisplayInfoEmployee(){
     	System.out.println("...................................................");

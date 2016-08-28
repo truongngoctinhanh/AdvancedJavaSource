@@ -28,28 +28,43 @@ public class Human {
 		return fullName;
 	}
 	public void setFullName(String fullName) {
-		this.fullName = fullName;
+		if (this.fullName.length() > 0)
+			this.fullName = fullName;
+		else
+			System.out.println("Value is NULL");
 	}
 	public String getDateOfBirth() {
 		return dateOfBirth;
 	}
 	public void setDateOfBirth(String dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
+		if (this.dateOfBirth.length() > 0)
+			this.dateOfBirth = dateOfBirth;
+		else
+			System.out.println("Value is NULL");
 	}
 	public String getAddress() {
 		return address;
 	}
 	public void setAddress(String address) {
-		this.address = address;
+		if (this.address.length() > 0)	
+			this.address = address;
+		else
+			System.out.println("Value is NULL");
 	}
 	public String getPhoneNumber() {
 		return phoneNumber;
 	}
 	public void setPhoneNumber(String phoneNumber) {
-		this.phoneNumber = phoneNumber;
+		if (this.phoneNumber.length() > 0)
+			this.phoneNumber = phoneNumber;
+		else
+			System.out.println("Value is NULL");
 	}
 	
-	//Function for show information
+	/**	 
+	 * Function for display information of Human
+	 * Output: information of Human
+	 */
 	public void showInformation(){
 		System.out.println("..............................................");
 		System.out.println("Full name of Student: " + this.fullName);

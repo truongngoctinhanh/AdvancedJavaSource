@@ -27,7 +27,11 @@ public class Gold extends Transaction{
 	public void setKindsOfGold(String kindsOfGold) {
 		this.kindsOfGold = kindsOfGold;
 	}
-	//Function for override DisplayInfoTransaction method
+	
+	/**
+	 * Function for override DisplayInfoTransaction method
+	 * Output: information of transaction
+	 */
 	@Override
 	public void DisplayInfoTransaction(){
 		System.out.println("Transaction ID: " + this.id);
@@ -36,7 +40,11 @@ public class Gold extends Transaction{
 		System.out.println("Kinds of gold : " + this.kindsOfGold);
 	}
 	
-	// Calculate total money to transaction gold
+	/**
+	 * Function for Calculate total money to transaction gold
+	 * Input: kinds Of Gold
+	 * Output: money
+	 */
 	public double calculateMoney(int kindsOfGold){
 		
 		double money = 0;
@@ -50,7 +58,11 @@ public class Gold extends Transaction{
 		}
 		return money;
 	}
-	
+	/**
+	 * Function for calculate unit price  depend kinds of gold 
+	 * Input: kinds of gold
+	 * Output: exchange rate
+	 */
 	public void setUnitPrice(int kindsOfGold){
 		if(kindsOfGold == 1)
 			exchangeRate = GoldTransaction.SJC9999.getPrice();

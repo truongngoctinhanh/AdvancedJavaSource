@@ -9,10 +9,12 @@ public class Bird extends Animals implements IFlying, INonMolt,INesting, IRunnin
 		super(name, mainFood);
 	}
 	
+	
+	@Override
 	public void fly() {
 		System.out.println("The birds moves by flying");
 	}
-
+	
 	@Override
 	public void nesting() {
 		System.out.println("Bird lives in the nest");

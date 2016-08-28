@@ -3,7 +3,7 @@ package Task12;
  * Author: Truong Ngoc Tinh Anh
  * Date: 22- 08 -2016
  * Version: 01
- * Class for declare RefernceBook object extend Book object and add calculateFee method, DisplayInfoBook method
+ * Class for declare referenceBook object extend Book object and add calculateFee method, DisplayInfoBook method
  */
 public class ReferenceBook extends Book {
 	private double tax;
@@ -28,8 +28,12 @@ public class ReferenceBook extends Book {
 		else
    			throw new ArithmeticException("Invalid value ! Please re-enter: ");
 	}
-
-	//Function for override calculateFee method
+	
+	/**
+	 * Function for override calculateFee() method to calculate fee of reference book
+	 * Input: quantity, unit price, tax
+	 * Output: fee of book
+	 */
 	@Override
 	public double calculateFee() {
 		double fee = 0;
@@ -37,7 +41,10 @@ public class ReferenceBook extends Book {
 		return fee;
 	}
 	
-	//Function for override DisplayInfoBook method
+	/**
+	 * Function for override DisplayInfoBook method to display information of reference book
+	 * Output: information of reference book
+	 */
 	@Override
 	public void DisplayInfoBook(){
 		System.out.println("..............................................");

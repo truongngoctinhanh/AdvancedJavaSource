@@ -39,7 +39,10 @@ public class Transaction {
 		this.quantity = quantity;
 	}
 	
-	//Function for Display Information Transaction
+	/**	 
+	 * Function for Display Information Transaction
+	 * Output: information of Transaction
+	 */
 	public void DisplayInfoTransaction(){
 		System.out.println("Transaction ID: " + this.id);
 		System.out.println("Date of transaction: " + this.date);

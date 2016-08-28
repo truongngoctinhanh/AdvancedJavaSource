@@ -29,7 +29,11 @@ public class Desktop extends Computer {
 		this.ram = ram;
 	}
 	
-	//Function for override showInformation method
+	/**
+	 * Function for override showInformation method to display information of computer
+	 * Input: none
+	 * Output: information of desktop
+	 */
 	@Override
 	public void showInformation(){
 		System.out.println("Information of Desktop");

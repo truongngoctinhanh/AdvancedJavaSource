@@ -37,7 +37,11 @@ public enum PersonalIncomeTax {
     }
     
     
-    //Function calculate Personal Income Tax
+    /**
+	 * Function for calculate personal income tax
+	 * Input: taxable Income
+	 * Output: personal income tax
+	 */
     
     public double calculatePersonalIncomeTax(double taxableIncome) {
         double result = 0;

@@ -13,7 +13,11 @@ import org.junit.Test;
 
 public class TestArea {
 
-	//Unit test for Area of circle
+		/**	
+		 * Unit Test for calculate area of Circle
+		 * Input: radius of Circle
+		 * Output: area of Circle
+		 */
 		Circle cir = new Circle();
 		@Test
 		public void testCircle1() {
@@ -95,7 +99,11 @@ public class TestArea {
 			assertEquals(ex, ac, 0.01);
 		}
 		
-		//Unit test for Area of rectangle
+		/**	
+		 * Unit Test for calculate area of Rectangle
+		 * Input: height and width of Rectangle
+		 * Output: area of Rectangle
+		 */
 		Rectangle rec = new Rectangle();
 		@Test
 		public void testRectangle1() {
@@ -188,7 +196,11 @@ public class TestArea {
 			assertEquals(ex, ac, 0.01);
 		}
 		
-		//Unit test for Area of square
+		/**	
+		 * Unit Test for calculate area of Square
+		 * Input: side of Square
+		 * Output: area of Square
+		 */
 		Square squ = new Square();
 		@Test
 		public void testSquare1() {

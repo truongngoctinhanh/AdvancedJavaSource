@@ -26,19 +26,31 @@ public class Square extends Shape {
 		this.sideOfSquare = sideOfSquare;
 	}
 	
-	//Function for calculate perimeter of Square
+	/**	
+	 * Function for calculate perimeter of Square
+	 * Input: side of Square
+	 * Output: perimeter of Square
+	 */
 	@Override
 	public double calPerimeter(){
 		return this.sideOfSquare * 4;
 	}
 	
-	//Function for calculate area of Square
+	/**	
+	 * Function for calculate area of Square
+	 * Input: side of Square
+	 * Output: area of Square
+	 */
 	@Override
 	public double calArea(){
 		return this.sideOfSquare * this.sideOfSquare;
 	}
 	
-	//Function for display Information of Square
+	/**	
+	 * Function for display Information of Square
+	 * Input: perimeter and area of Square
+	 * Output: Information about perimeter and area of Square
+	 */
 	@Override
 	public void displayInfoShape(){
 		System.out.println(String.format("The perimeter of square: %.3f", this.calPerimeter()));
