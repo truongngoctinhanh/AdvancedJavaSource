@@ -12,8 +12,8 @@ public class MainForManagementOrder {
 		// TODO Auto-generated method stub
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 		try {
-			ATMCard atm = new ATMCard("atm1285", 1000000000);
-			CreditCard credit = new CreditCard("cre1285", "31/12/2020", 1000000000, "money");
+			ATMCard atm = new ATMCard("ATMTNTA1012", 1000000000);
+			CreditCard credit = new CreditCard("CREDITTNTA1012", "27/10/2020", 1000000000, "card account");
 			List<OrderDetail> list = new ArrayList<>();
 			String cont = "y";
 			while (cont.equals("y")) {
