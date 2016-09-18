@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<departments>
+	<department>
+		<id>1</id>
+		<name>A</name>
+	</department>
+	<department>
+		<id>2</id>
+		<name>B</name>
+	</department>
+	<department>
+		<id>3</id>
+		<name>C</name>
+	</department>
+</departments>

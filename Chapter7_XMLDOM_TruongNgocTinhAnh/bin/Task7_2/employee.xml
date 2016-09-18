@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<department>
+	<employee>
+		<id>1</id>
+		<fullname>Anh</fullname>
+		<gender>0</gender>
+		<date>10-12-1993</date>
+		<address>District11</address>		
+		<phone>0126583890</phone>		
+		<email>anhtruong</email>
+		<salary>1200000</salary>
+		<idDep>1</idDep>
+	</employee>
+</department>
