@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CDs>
+     <CD>
+          <id>2</id>
+          <name>Mylove2</name>
+          <singer>anh</singer>
+          <numbersongs>15</numbersongs>
+          <price>10000.0</price>
+     </CD>
+     <CD>
+          <id>4</id>
+          <name>Mylove4</name>
+          <singer>Lena</singer>
+          <numbersongs>6</numbersongs>
+          <price>100000.0</price>
+     </CD>
+     <CD>
+          <id>5</id>
+          <name>Mylove5</name>
+          <singer>QuynhAnh</singer>
+          <numbersongs>1</numbersongs>
+          <price>41000.0</price>
+     </CD>
+     <CD>
+          <id>6</id>
+          <name>Mylove</name>
+          <singer>Hari</singer>
+          <numbersongs>4</numbersongs>
+          <price>20000.0</price>
+     </CD>
+</CDs>
